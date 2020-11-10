@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-12 mt-3" *ngFor="let pet of pets">
+    <h2 class="ml-3">{{pet.name}}</h2>
+    <img src="{{pet.imageUrl}}" alt="{{pet.name}}" class="ml-3 mr-3 float-left img-fluid" style="max-width: 400px; height: 400px;">
+    <h3>Generalije</h3>
+    <p>Godine: {{pet.age}}</p>
+    <p>Pol: {{pet.gender}}</p>
+    <p>Rasa: {{pet.breed}}</p>
+    <p>Datum: {{pet.dateOfCreation}}</p>
+    <p>Hobbies:</p>
+    <ul *ngFor="let h of pet.hobbies" class="list-group">
+        <li class="ml-3">{{h}}</li>
+    </ul>
+</div>
+</div>
+
+
